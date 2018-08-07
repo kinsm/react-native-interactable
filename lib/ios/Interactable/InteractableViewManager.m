@@ -42,6 +42,7 @@ RCT_EXPORT_VIEW_PROPERTY(onDrag, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(initialPosition, CGPoint)
 RCT_EXPORT_VIEW_PROPERTY(onAnimatedEvent, RCTDirectEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(reportOnAnimatedEvents, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(allowHandleGesturesSimultaneously, BOOL)
 
 RCT_EXPORT_METHOD(setVelocity:(nonnull NSNumber *)reactTag
                   params:(NSDictionary*)params)
@@ -65,7 +66,7 @@ RCT_EXPORT_METHOD(setVelocity:(nonnull NSNumber *)reactTag
 RCT_EXPORT_METHOD(bringToFront:(nonnull NSNumber *)reactTag
                   params:(NSDictionary*)params)
 {
-    
+
 }
 
 RCT_EXPORT_METHOD(snapTo:(nonnull NSNumber *)reactTag

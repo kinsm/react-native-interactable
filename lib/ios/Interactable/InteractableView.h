@@ -35,6 +35,7 @@
 @property (nonatomic, assign) CGPoint initialPosition;
 @property (nonatomic, copy) RCTDirectEventBlock onAnimatedEvent;
 @property (nonatomic, assign) BOOL reportOnAnimatedEvents;
+@property (nonatomic, assign) BOOL allowHandleGesturesSimultaneously;
 
 - (instancetype)initWithBridge:(RCTBridge*)bridge;
 - (void)setVelocity:(NSDictionary*)params;

@@ -336,6 +336,7 @@ RCT_NOT_IMPLEMENTED(- (instancetype)init)
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)pan shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)other
 {
     // return YES to allow a hosting scrollview to scroll while an interactable view is moving
+    if (self.allowHandleGesturesSimultaneously) return YES;
     return NO;
 }
 
